@@ -21,10 +21,13 @@ class queueUsingTwoStack():
 				self.numberOfPushOperation += 1
 
 		if not self.stack2:
-			return "Queue is empty and number of push operations = " + str(self.numberOfPushOperation) + " number of pop operations = " + str(self.numberOfPopOperation)
+			return "Queue is empty"
 		else:
 			self.numberOfPopOperation += 1
 			return self.stack2.pop()
+
+	def NumberOfOprations(self):
+		return "Number of push operations = " + str(self.numberOfPushOperation) + "\nNumber of pop operations = " + str(self.numberOfPopOperation)
 
 if __name__ == "__main__":
 	q = queueUsingTwoStack()
@@ -32,11 +35,16 @@ if __name__ == "__main__":
 	q.Enqueue(1)
 	q.Enqueue(2)
 	q.Enqueue(3)
+	print q.NumberOfOprations()
 	print q.Dequeue()
+	print q.NumberOfOprations()
 	q.Enqueue(4)
 	q.Enqueue(5)
+	print q.NumberOfOprations()
 	print q.Dequeue()
 	print q.Dequeue()
+	print q.NumberOfOprations()
 	print q.Dequeue()
 	print q.Dequeue()
+	print q.NumberOfOprations()
 	print q.Dequeue()
