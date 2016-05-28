@@ -6,6 +6,7 @@
 4. Code will print Number of operation by `print NumberOfOprations()` statement.
 5. Code will Execute by command `python zimmber.py`
 
+```
 Example
   Opearation: 
     Enqueue(1)
@@ -72,6 +73,6 @@ Solution:
     Push operation = 0, Pop operation 2
     stack1 = []
     stack2 = []
-    Total push operation = 10, Total pop operation 10
+    Total push operation = 10, Total pop operation 10 ```
     
     
